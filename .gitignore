@@ -1,0 +1,7 @@
+.idea/
+*.exe
+*.exe`
+*.bat
+*.txt
+.idea
+.DS_Store
