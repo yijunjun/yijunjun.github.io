@@ -1,37 +1,17 @@
-#易军军的wiki
+# 易军军的wiki
 
-[Python]()
+## life is short,you need python(生命苦短,我用Python)
 
-  * # Django
-  * [官网]()
-  ----
-  * # Flask
-  * [官网]()
-  ----
+```python
+print("hello, world")
+```
 
-[Golang]()
+## dead is coming, let is go(死亡来了, 让我们go)
 
-  * # grpc
-  * [官网]()
-  
-  ----
-  * # mysql
-  * [连接库 >>]()
-  ----
-  * # mongdb
-  * [连接库 >>]()
-  ----
-  * # redis
-  * [连接库]()
-  ----
-  * # memcache
-  * [连接库 >>]()
+```go
+import "fmt"
 
-[Mysql]()
-
-
-[JavaScript]()
-
-
-[其他]()
-
+func main(){
+  fmt.Println("hello,world")
+}
+```
