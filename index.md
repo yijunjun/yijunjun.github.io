@@ -6,12 +6,17 @@
 print("hello, world")
 ```
 
-## dead is coming, let is go(死亡来了, 让我们go)
+## dead is coming, let is go(死亡来了, 让我们Go)
 
 ```go
-import "fmt"
+import (
+    "fmt"
+)
 
-func main(){
-  fmt.Println("hello,world")
+// main函数会卡住渲染
+func init() {
+    fmt.Println("hello, world")
 }
 ```
+
+## 生命不息,轮子不尽

@@ -1,6 +1,6 @@
 # 易军军的wiki
 
-## Python
+[Python]()
 
 * [官网](https://www.python.org/)
 
@@ -26,8 +26,7 @@
 
 * [web3.py](https://github.com/pipermerriam/web3.py)
 
-
-## Golang
+[Golang]()
 
 * [官网](https://golang.google.cn/)
 
@@ -41,7 +40,9 @@
 
 * [memcache]()
 
-## 数据库
+* [hello.md](golang/hello.md)
+
+[数据库]()
 
 * [Mysql](https://www.mysql.com/)
 
@@ -57,8 +58,7 @@
 
 * [memcache](https://www.memcached.org/)
 
-
-## 其他
+[其他]()
 
 * [无google全家桶的chromium](https://github.com/Eloston/ungoogled-chromium)
 
