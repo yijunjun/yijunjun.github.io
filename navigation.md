@@ -63,3 +63,5 @@
 * [无google全家桶的chromium](https://github.com/Eloston/ungoogled-chromium)
 
 * [IBM-开发人员频道](https://www.ibm.com/developerworks/cn/)
+
+* [Chrome插件开发攻略](http://chromecj.com/dev/2018-07/1482.html)
