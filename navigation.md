@@ -58,10 +58,14 @@
 
 * [memcache](https://www.memcached.org/)
 
-[其他]()
+[浏览器]()
 
 * [无google全家桶的chromium](https://github.com/Eloston/ungoogled-chromium)
 
-* [IBM-开发人员频道](https://www.ibm.com/developerworks/cn/)
-
 * [Chrome插件开发攻略](http://chromecj.com/dev/2018-07/1482.html)
+
+* [mac下chromium装flash](browser/mac-chromium-flash.md)
+
+[其他]()
+
+* [IBM-开发人员频道](https://www.ibm.com/developerworks/cn/)
