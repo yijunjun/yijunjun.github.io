@@ -64,7 +64,11 @@
 
 * [Chrome插件开发攻略](http://chromecj.com/dev/2018-07/1482.html)
 
+* [图解浏览器渲染过程](https://github.com/abcrun/abcrun.github.com/issues/17)
+
 * [mac下chromium装flash](browser/mac-chromium-flash.md)
+
+* [mac下chromium提示google-api缺失](browser/mac-chromium-google-api.md)
 
 [其他]()
 
