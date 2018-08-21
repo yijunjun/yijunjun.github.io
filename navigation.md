@@ -40,7 +40,7 @@
 
 * [memcache]()
 
-* [hello.md](golang/hello.md)
+* [hello](golang/hello.md)
 
 [数据库]()
 
