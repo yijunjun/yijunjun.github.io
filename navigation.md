@@ -58,6 +58,12 @@
 
 * [memcache](https://www.memcached.org/)
 
+[区块链]()
+
+* [腾讯区块链](https://trustsql.qq.com/)
+
+* [区块链——颠覆式创新技术](https://yq.aliyun.com/articles/60141)
+
 [浏览器]()
 
 * [无google全家桶的chromium](https://github.com/Eloston/ungoogled-chromium)
