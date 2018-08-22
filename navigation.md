@@ -67,6 +67,11 @@
 
 * [区块链——颠覆式创新技术](https://yq.aliyun.com/articles/60141)
 
+* [比原链](http://bytom.io/)
+
+* [比原链-github](https://github.com/Bytom/bytom)
+
+
 [浏览器]()
 
 * [无google全家桶的chromium](https://github.com/Eloston/ungoogled-chromium)
