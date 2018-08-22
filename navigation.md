@@ -49,6 +49,8 @@
 * [MySQL索引实现](http://blog.codinglabs.org/articles/theory-of-mysql-index.html)
 
 * [MysqlWorkbench-EER图](mysql/workbench-err.md)
+
+* [Mysql-碎片](mysql/frag.md)
 ----
 
 * [Mariadb](https://mariadb.org/)
