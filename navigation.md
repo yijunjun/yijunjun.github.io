@@ -44,13 +44,13 @@
 
 [数据库]()
 
-* [Mysql](https://www.mysql.com/)
+* [mysql官网](https://www.mysql.com/)
 
-* [MySQL索引实现](http://blog.codinglabs.org/articles/theory-of-mysql-index.html)
+* [mySQL索引实现](http://blog.codinglabs.org/articles/theory-of-mysql-index.html)
 
-* [MysqlWorkbench-EER图](mysql/workbench-err.md)
+* [mysqlworkbench-EER图](mysql/workbench-err.md)
 
-* [Mysql-碎片](mysql/frag.md)
+* [mysql-碎片](mysql/frag.md)
 ----
 
 * [Mariadb](https://mariadb.org/)
