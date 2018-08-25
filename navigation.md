@@ -50,7 +50,7 @@
 
 * [mysqlworkbench-EER图](mysql/workbench-err.md)
 
-* [mysql-碎片](mysql/frag.md)
+* [mysql-杂项](mysql/util.md)
 ----
 
 * [Mariadb](https://mariadb.org/)

@@ -8,3 +8,12 @@
 
 > 例如：
 一个表有1万行，每行10字节，会占用10万字节存储空间，执行删除操作，只留一行，实际内容只剩下10字节，但MySQL在读取时，仍看做是10万字节的表进行处理，所以，碎片越多，就会越来越影响查询性能。
+
+
+# 通用日志,调试好帮手
+
+```sql
+show variables like '%general%';
+set @@global.general_log=1;
+set @@global.general_log=0;
+```
