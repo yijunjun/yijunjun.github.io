@@ -17,7 +17,27 @@ dep init
 ### 添加第三方库
 
 ```bash
-dep ensure -add github.com/foo/bar github.com/baz/quux
+dep ensure
+```
+
+## 最符合国情的第三方版本管理工具
+
+### 安装
+
+```bash
+go get -u -v github.com/kardianos/govendor
+```
+
+### 初始化项目
+
+```bash
+govendor init
+```
+
+### 添加第三方库
+
+```bash
+govendor add +e
 ```
 
 ## 号称最快的json处理库
