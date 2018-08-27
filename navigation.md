@@ -89,3 +89,5 @@
 [其他]()
 
 * [IBM-开发人员频道](https://www.ibm.com/developerworks/cn/)
+
+* [google-新jpeg算法](https://github.com/google/guetzli)

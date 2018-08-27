@@ -1,4 +1,31 @@
-# 防止多进程实例
+# 记录一下有用代码片段
+
+## 调试golang程序
+
+### 1.附加调试代码
+
+```go
+import _ "net/http/pprof"
+
+go func() {
+    log.Println(http.ListenAndServe("localhost:6060", nil))
+}()
+```
+
+### 2. pprof查看
+
+```bash
+go tool pprof http://localhost:6060/debug/pprof/heap
+svg
+```
+
+### 3. 图形化
+
+```bash
+svg
+```
+
+## 防止多进程实例
 
 ```go
 // 防止多进程
