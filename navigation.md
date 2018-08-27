@@ -42,6 +42,8 @@
 
 * [代码片段](golang/code_snippet.md)
 
+* [常用工具](golang/tool.md)
+
 [数据库]()
 
 * [mysql官网](https://www.mysql.com/)
