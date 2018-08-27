@@ -34,6 +34,12 @@ go get -u -v github.com/kardianos/govendor
 govendor init
 ```
 
+###  忽略本地已有包
+
+```bash
+"ignore": "test xxx.com/",
+```
+
 ### 添加第三方库
 
 ```bash
