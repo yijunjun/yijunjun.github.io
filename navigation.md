@@ -93,3 +93,5 @@
 * [google-新jpeg算法](https://github.com/google/guetzli)
 
 * [nginx配置](other/nginx.md)
+
+* [免费申请ssl证书](https://freessl.org/)
