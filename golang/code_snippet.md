@@ -16,7 +16,6 @@ go func() {
 
 ```bash
 go tool pprof http://localhost:6060/debug/pprof/heap
-svg
 ```
 
 ### 3. 图形化
