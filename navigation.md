@@ -95,3 +95,7 @@
 * [nginx配置](other/nginx.md)
 
 * [免费申请ssl证书](https://freessl.org/)
+
+* [微信支付接入](https://pay.weixin.qq.com/)
+
+* [支付宝支付接入](https://open.alipay.com/)
