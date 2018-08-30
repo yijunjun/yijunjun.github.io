@@ -99,3 +99,5 @@
 * [微信支付接入](https://pay.weixin.qq.com/)
 
 * [支付宝支付接入](https://open.alipay.com/)
+
+* [网易云信](https://netease.im/)
