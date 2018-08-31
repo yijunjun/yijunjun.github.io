@@ -65,6 +65,8 @@
 
 [区块链]()
 
+* [区块链-简介](blockchain/intro.md)
+
 * [腾讯区块链](https://trustsql.qq.com/)
 
 * [区块链——颠覆式创新技术](https://yq.aliyun.com/articles/60141)
