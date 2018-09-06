@@ -48,3 +48,6 @@ govendor add +e
 
 ## 号称最快的json处理库
 [json-iterator](https://github.com/json-iterator/go)
+
+## 死锁检测库
+[go-deadlock](github.com/sasha-s/go-deadlock)
