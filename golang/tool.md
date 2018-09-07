@@ -51,3 +51,9 @@ govendor add +e
 
 ## 死锁检测库
 [go-deadlock](github.com/sasha-s/go-deadlock)
+
+## 号称最快的web框架
+[iris](https://github.com/kataras/iris)
+
+## 全自动apidoc生成
+[yaag](https://github.com/betacraft/yaag)
