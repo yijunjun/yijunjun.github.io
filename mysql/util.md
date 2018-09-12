@@ -17,3 +17,10 @@ show variables like '%general%';
 set @@global.general_log=1;
 set @@global.general_log=0;
 ```
+
+# IF条件表达式
+
+```sql
+IF(expr1,expr2,expr3)
+如果 expr1 为真(expr1 <> 0 以及 expr1 <> NULL)，那么 IF() 返回 expr2，否则返回 expr3。IF() 返回一个数字或字符串，这取决于它被使用的语境：
+```
