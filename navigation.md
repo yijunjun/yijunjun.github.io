@@ -96,6 +96,8 @@
 
 * [nginx配置](other/nginx.md)
 
+* [shell相关](other/shell.md)
+
 * [无脑手机游戏分析](other/game_parse.md)
 
 * [免费申请ssl证书](https://freessl.org/)
