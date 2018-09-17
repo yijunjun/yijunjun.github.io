@@ -31,3 +31,11 @@ IF(expr1,expr2,expr3)
 ```sql
 select col from table group by col having count(col) > 1
 ```
+
+# 常用时间函数
+
+```sql
+FROM_UNIXTIME(unix_timestamp)是MySQL里的时间函数。
+
+UNIX_TIMESTAMP('2018-09-17') 是与之相对正好相反的时间函数 。
+```
