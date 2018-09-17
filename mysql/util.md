@@ -39,3 +39,5 @@ FROM_UNIXTIME(unix_timestamp)是MySQL里的时间函数。
 
 UNIX_TIMESTAMP('2018-09-17') 是与之相对正好相反的时间函数 。
 ```
+
+# Binlog,阿里云的rds默认把它也计算在内,要手动设置控制大小.
