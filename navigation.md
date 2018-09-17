@@ -40,6 +40,12 @@
 
 * [memcache]()
 
+* [ApiDoc-Generator](https://github.com/betacraft/yaag)
+
+* [deadlock-死锁检测](https://github.com/sasha-s/go-deadlock)
+
+* [go-chart-纯go代码画图](https://github.com/wcharczuk/go-chart)
+
 * [代码片段](golang/code_snippet.md)
 
 * [常用工具](golang/tool.md)
@@ -53,6 +59,7 @@
 * [mysqlworkbench-EER图](mysql/workbench-err.md)
 
 * [mysql-杂项](mysql/util.md)
+
 ----
 
 * [Mariadb](https://mariadb.org/)
@@ -76,6 +83,18 @@
 * [比原链-github](https://github.com/Bytom/bytom)
 
 
+[Web]()
+
+* [echarts-图形库](http://echarts.baidu.com/)
+
+* [vue](https://cn.vuejs.org/)
+
+* [前端cdn](https://www.bootcdn.cn/)
+
+* [mermaidjs-代码画图库](https://mermaidjs.github.io/)
+
+* [plantuml-代码画图库](http://plantuml.com/)
+
 [浏览器]()
 
 * [无google全家桶的chromium](https://github.com/Eloston/ungoogled-chromium)
@@ -89,6 +108,14 @@
 * [mac下chromium提示google-api缺失](browser/mac-chromium-google-api.md)
 
 [其他]()
+
+* [protocol-buffers](https://developers.google.cn/protocol-buffers/)
+
+* [tensorflow库](https://tensorflow.google.cn/)
+
+* [docker-store](https://store.docker.com/)
+
+* [mac-brew](https://brew.sh/)
 
 * [IBM-开发人员频道](https://www.ibm.com/developerworks/cn/)
 
@@ -109,5 +136,3 @@
 * [网易云信](https://netease.im/)
 
 * [ssh介绍](https://www.cnblogs.com/dzblog/p/6930147.html)
-
-* [前端cdn](https://www.bootcdn.cn/)
