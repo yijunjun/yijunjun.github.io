@@ -57,3 +57,6 @@ govendor add +e
 
 ## 全自动apidoc生成
 [yaag](https://github.com/betacraft/yaag)
+
+## 一些有用的tips
+[tips](https://go101.org/article/tips.html)
