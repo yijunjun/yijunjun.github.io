@@ -17,3 +17,9 @@ defaults delete com.unity3d.UnityEditor5.x "RecentlyUsedProjectPaths-0"
 string trackStr = new System.Diagnostics.StackTrace().ToString();
 Debug.Log ("Stack Info:" + trackStr);
 ```
+
+## 入门积累
+
+1.  Unity是单线程设计的游戏引擎,子线程中无法运行Unity SDK
+2.  Unity主循环是单线程,游戏脚本MonoBehavior有着严格的生命周期
+3.  倾向使用time slicing（时间分片）的协程（coroutine）去完成异步任务
