@@ -32,15 +32,25 @@
 
 * [grpc](https://grpc.io/)
 
-* [mysql]()
+* [mysql](https://github.com/go-sql-driver/mysql)
 
-* [mongdb]()
+* [mongdb-不再维护](https://github.com/go-mgo/mgo)
 
-* [redis]()
+* [mongdb-社区维护](https://github.com/globalsign/mgo)
 
-* [memcache]()
+* [mongdb-官网库](https://github.com/mongodb/mongo-go-driver)
+
+* [redis](https://github.com/go-redis/redis)
+
+* [memcache](https://github.com/bradfitz/gomemcache)
 
 * [ApiDoc-Generator](https://github.com/betacraft/yaag)
+
+* [qor-admin](https://github.com/qor/admin)
+
+* [golanglibs](https://golanglibs.com/)
+
+* [godoc](https://godoc.org/)
 
 * [deadlock-死锁检测](https://github.com/sasha-s/go-deadlock)
 
@@ -87,7 +97,19 @@
 
 * [echarts-图形库](http://echarts.baidu.com/)
 
+* [BizCharts-图形库](https://github.com/alibaba/BizCharts)
+
+* [g2-图形库](https://antv.alipay.com/zh-cn/g2/3.x/tutorial)
+
 * [vue](https://cn.vuejs.org/)
+
+* [angular](https://angular.io/)
+
+* [dart](https://www.dartlang.org/)
+
+* [javascript-英文学习站](https://www.javascript.com/)
+
+* [javascript-w3c](http://www.w3school.com.cn/js/)
 
 * [前端cdn](https://www.bootcdn.cn/)
 
@@ -122,6 +144,12 @@
 * [mac下chromium提示google-api缺失](browser/mac-chromium-google-api.md)
 
 [其他]()
+
+* [yandex-搜索引擎](https://yandex.com/)
+
+* [webcrawler-搜索引擎](http://www.webcrawler.com/)
+
+----
 
 * [protocol-buffers](https://developers.google.cn/protocol-buffers/)
 
