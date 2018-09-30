@@ -23,3 +23,31 @@ Debug.Log ("Stack Info:" + trackStr);
 1.  Unity是单线程设计的游戏引擎,子线程中无法运行Unity SDK
 2.  Unity主循环是单线程,游戏脚本MonoBehavior有着严格的生命周期
 3.  倾向使用time slicing（时间分片）的协程（coroutine）去完成异步任务
+
+## 常见热更方案
+
+1.  利用c#反射,动态加载程序集,实现代码更新
+
+```c#
+// 从指定网址下载
+Assembly assembly = Assembly.LoadFile(assemblyFile);
+```
+
+2.  创建Lua虚拟机,加载Lua脚本.
+
+- 1. [腾讯-xLua方案](https://github.com/Tencent/xLua)
+
+```c#
+XLua.LuaEnv luaenv = new XLua.LuaEnv();
+luaenv.DoString("CS.UnityEngine.Debug.Log('hello world')");
+luaenv.Dispose();
+```
+
+- 2. [tolua-号称最快](https://github.com/topameng/tolua)
+
+```C#
+LuaState lua = new LuaState();
+lua.Start();
+lua.DoString("print('hello world')");
+lua.Dispose();
+```
