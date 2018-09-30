@@ -35,7 +35,7 @@ Assembly assembly = Assembly.LoadFile(assemblyFile);
 
 2.  创建Lua虚拟机,加载Lua脚本.
 
-- 1. [腾讯-xLua方案](https://github.com/Tencent/xLua)
+- 2.1 [腾讯-xLua方案](https://github.com/Tencent/xLua)
 
 ```c#
 XLua.LuaEnv luaenv = new XLua.LuaEnv();
@@ -43,7 +43,7 @@ luaenv.DoString("CS.UnityEngine.Debug.Log('hello world')");
 luaenv.Dispose();
 ```
 
-- 2. [tolua-号称最快](https://github.com/topameng/tolua)
+- 2.2 [tolua-号称最快](https://github.com/topameng/tolua)
 
 ```C#
 LuaState lua = new LuaState();
