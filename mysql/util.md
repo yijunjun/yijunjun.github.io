@@ -41,3 +41,11 @@ UNIX_TIMESTAMP('2018-09-17') 是与之相对正好相反的时间函数 。
 ```
 
 # Binlog,阿里云的rds默认把它也计算在内,要手动设置控制大小.大量数据删除时,会突然增加Binlog文件.
+
+# 查询数据库占用空间及索引空间
+
+```sql
+select TABLE_NAME, concat(truncate(data_length/1024/1024,2),' MB') as data_size,
+concat(truncate(index_length/1024/1024,2),' MB') as index_size
+from information_schema.tables where TABLE_SCHEMA = 'databaseName'
+```
