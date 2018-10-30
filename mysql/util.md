@@ -54,3 +54,8 @@ from information_schema.tables where TABLE_SCHEMA = 'databaseName'
 ```sql
 update user set nickname = concat(id,'号') where id > 0
 ```
+
+# 查看客户端连接详情
+```sql
+show full processlist;
+```
