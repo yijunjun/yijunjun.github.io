@@ -32,6 +32,12 @@ IF(expr1,expr2,expr3)
 select col from table group by col having count(col) > 1
 ```
 
+# 带忽略重复的插入
+
+```sql
+insert ignore into table(name)  value('xx')
+```
+
 # 常用时间函数
 
 ```sql
