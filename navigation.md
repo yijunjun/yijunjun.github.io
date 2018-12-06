@@ -151,6 +151,8 @@
 
 * [mezw-搜索引擎](https://so.mezw.com/)
 
+* [ecs-阿里云](other/ecs.md)
+
 ----
 
 * [github-好库收集](https://www.gitlogs.com/)
