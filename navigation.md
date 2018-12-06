@@ -70,6 +70,8 @@
 
 * [mysql-杂项](mysql/util.md)
 
+* [coin-report](mysql/coin-report-erp.md)
+
 ----
 
 * [Mariadb](https://mariadb.org/)
