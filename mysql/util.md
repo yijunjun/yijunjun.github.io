@@ -65,3 +65,8 @@ update user set nickname = concat(id,'号') where id > 0
 ```sql
 show full processlist;
 ```
+
+# 字符串替换
+```sql
+update user set nickname = REPLACE(id,'old', 'now') where id > 0
+```
