@@ -153,6 +153,8 @@
 
 * [ecs-阿里云](other/ecs.md)
 
+* [地理位置](other/geocode.md)
+
 ----
 
 * [github-好库收集](https://www.gitlogs.com/)
