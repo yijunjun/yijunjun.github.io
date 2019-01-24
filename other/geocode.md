@@ -14,3 +14,5 @@
 2. [百度地图开放平台](http://lbsyun.baidu.com/index.php?title=webapi/guide/webservice-geocoding-abroad)
 
 3. [google中国](https://developers.google.cn/maps/documentation/geocoding/start?hl=zh-cn#Limits)
+
+4. [阿里云-云市场](https://market.aliyun.com/products/57002002/cmapi020535.html#sku=yuncode1453500000)

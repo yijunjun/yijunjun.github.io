@@ -127,6 +127,8 @@
 
 [flutter]()
 
+* [积累](flutter/util.md)
+
 * [flutter官网](https://flutter.io/)
 
 * [flutter-中文网](https://flutterchina.club/)
@@ -153,7 +155,7 @@
 
 * [ecs-阿里云](other/ecs.md)
 
-* [地理位置](other/geocode.md)
+* [地理位置编码](other/geocode.md)
 
 ----
 
