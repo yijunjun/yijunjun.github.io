@@ -19,4 +19,6 @@ func init() {
 }
 ```
 
-## 生命不息,轮子不尽
+## 简历APP
+
+![简历APP](!img/app.png)
