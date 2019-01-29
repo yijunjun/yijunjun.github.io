@@ -157,6 +157,8 @@
 
 * [地理位置编码](other/geocode.md)
 
+* [git积累](other/git.md)
+
 ----
 
 * [github-好库收集](https://www.gitlogs.com/)
