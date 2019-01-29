@@ -21,4 +21,4 @@ func init() {
 
 ## 简历APP
 
-![简历APP](!img/app.png)
+![简历APP](img/app.png)
