@@ -31,3 +31,10 @@ GSSAPIAuthentication no
 ```bash
 netstat -ltpn
 ```
+
+## 查看网卡流量
+
+```bash
+sar -n DEV 1 10
+```
+> 注：每1秒 显示 1次 显示 10次
