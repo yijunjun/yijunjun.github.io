@@ -24,3 +24,10 @@ vi /etc/ssh/sshd_config
 UseDNS no
 GSSAPIAuthentication no
 ```
+
+
+## 列出所有监听tcp端口程序
+
+```bash
+netstat -ltpn
+```
