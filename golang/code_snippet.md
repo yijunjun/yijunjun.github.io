@@ -78,6 +78,10 @@ func InitFatalLog(fileName string)  {
 }
 ```
 
+##　map+mutex和sync.map比较
+> map+sync.mutex在小数据范围内效率高,大并发及cpu效率下降明显
+> sync.map性能比较平稳,主要采用读写分开存储读取,建议采用.
+
 ## proto文件enum定义,可以自转产生名称字符串
 
 ```pb
