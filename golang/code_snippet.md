@@ -77,3 +77,55 @@ func InitFatalLog(fileName string)  {
 	syscall.Dup2(int(logFile.Fd()), int(os.Stderr.Fd()))
 }
 ```
+
+## proto文件enum定义,可以自转产生名称字符串
+
+```pb
+enum Platfrom 
+{
+    IOS = 1;			//ios//
+    Android = 2;		//安卓//
+};
+```
+
+```golang
+type Platfrom int32
+
+const (
+	Platfrom_IOS     Platfrom = 1
+	Platfrom_Android Platfrom = 2
+)
+
+var Platfrom_name = map[int32]string{
+	1: "IOS",
+	2: "Android",
+}
+
+var Platfrom_value = map[string]int32{
+	"IOS":     1,
+	"Android": 2,
+}
+
+func (x Platfrom) Enum() *Platfrom {
+	p := new(Platfrom)
+	*p = x
+	return p
+}
+
+func (x Platfrom) String() string {
+	return proto.EnumName(Platfrom_name, int32(x))
+}
+
+func (x *Platfrom) UnmarshalJSON(data []byte) error {
+	value, err := proto.UnmarshalJSONEnum(Platfrom_value, data, "Platfrom")
+	if err != nil {
+		return err
+	}
+	*x = Platfrom(value)
+	return nil
+}
+
+func (Platfrom) EnumDescriptor() ([]byte, []int) {
+	return fileDescriptor_08cf373aec2ae6fc, []int{0}
+}
+```
