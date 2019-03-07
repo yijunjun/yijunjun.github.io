@@ -70,3 +70,16 @@ show full processlist;
 ```sql
 update user set nickname = REPLACE(id,'old', 'now') where id > 0
 ```
+
+# 修改root密码
+```bash
+killall mysqld
+
+mysqld_safe --skip-grant-tables &
+
+update mysql.user set password=PASSWORD('newpassword') where user='root';
+
+flush privileges;
+
+mysqld_safe &
+```
