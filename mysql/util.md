@@ -83,3 +83,8 @@ flush privileges;
 
 mysqld_safe &
 ```
+
+# 查看默认引擎
+```sql
+show engines;
+```
