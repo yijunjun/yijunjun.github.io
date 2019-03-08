@@ -8,3 +8,8 @@ cd xxx
 unset $(git rev-parse --local-env-vars);
 git pull
 ```
+
+## 带用户名及密码的git clone 
+```bash
+git clone http://uer:pwd@xxx.git
+```
