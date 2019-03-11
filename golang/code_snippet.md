@@ -83,6 +83,32 @@ func InitFatalLog(fileName string)  {
 }
 ```
 
+## 获取本机ip
+```golang
+    addrs, err := net.InterfaceAddrs()
+	if err != nil {
+		panic(err.Error())
+	}
+	// handle err
+	for _, addr := range addrs {
+		ipNet, ok := addr.(*net.IPNet)
+		if !ok {
+			continue
+		}
+		ip := ipNet.IP
+		if ip.IsLoopback() || ip.IsMulticast() || ip.IsLinkLocalUnicast() || ip.IsLinkLocalMulticast() {
+			continue
+		}
+
+		selfIp = ip.String()
+		break
+	}
+
+	if selfIp == "" {
+		selfIp, _ = os.Hostname()
+	}
+```
+
 ##　map+mutex和sync.map比较
 > map+sync.mutex在小数据范围内效率高,大并发及cpu效率下降明显
 > sync.map性能比较平稳,主要采用读写分开存储读取,建议采用.
