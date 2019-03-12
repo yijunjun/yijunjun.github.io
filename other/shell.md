@@ -73,3 +73,22 @@ do
    sleep 30
 done
 ```
+
+## 编译脚本
+```bash
+#!/usr/bin/env bash
+# 批量杀死目标进程
+ps -ef|grep yyy | grep -v grep | awk '{print $2}' | xargs kill -9
+hash=`git rev-parse --short HEAD`
+rc=`date "+%Y-%m-%d_%H:%M:%S"`
+target=yyy
+go build -ldflags "-s -w -X main.GitHash=${hash} -X main.CompileTime=${rc}" -tags=jsoniter -o ${target} ${target}.go
+chmod a+x ${target}
+rundir=${target}_run
+rm -rf ${rundir}
+mkdir ${rundir}
+mv ${target} ${rundir}
+cp -r conf ${rundir}/
+nohup ./${target} >/dev/null 2>&1 &
+exit
+```
