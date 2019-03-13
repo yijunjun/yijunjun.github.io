@@ -187,10 +187,6 @@ func main() {
     db.MustExec(schema)
     
     tx := db.MustBegin()
-    tx.MustExec("INSERT INTO person (first_name, last_name, email) VALUES ($1, $2, $3)", "Jason", "Moiron", "jmoiron@jmoiron.net")
-    tx.MustExec("INSERT INTO person (first_name, last_name, email) VALUES ($1, $2, $3)", "John", "Doe", "johndoeDNE@gmail.net")
-    tx.MustExec("INSERT INTO place (country, city, telcode) VALUES ($1, $2, $3)", "United States", "New York", "1")
-    tx.MustExec("INSERT INTO place (country, telcode) VALUES ($1, $2)", "Hong Kong", "852")
     tx.MustExec("INSERT INTO place (country, telcode) VALUES ($1, $2)", "Singapore", "65")
     // Named queries can use structs, so if you have an existing struct (i.e. person := &Person{}) that you have populated, you can pass it in as &person
     tx.NamedExec("INSERT INTO person (first_name, last_name, email) VALUES (:first_name, :last_name, :email)", &Person{"Jane", "Citizen", "jane.citzen@example.com"})
@@ -311,5 +307,36 @@ func (x *Platfrom) UnmarshalJSON(data []byte) error {
 
 func (Platfrom) EnumDescriptor() ([]byte, []int) {
 	return fileDescriptor_08cf373aec2ae6fc, []int{0}
+}
+```
+
+## 发邮件
+```golang
+import (
+	"github.com/spf13/viper"
+	"gopkg.in/gomail.v2"
+)
+/*
+ 发送邮件
+*/
+func SendMail(subject, body string) {
+	m := gomail.NewMessage()
+	m.SetHeader("From", mailConfigViper_.GetString("from"))
+	m.SetHeader("To", mailConfigViper_.GetString("to"))
+
+	m.SetHeader("Subject", subject)
+	m.SetBody("text/plain", body)
+
+	d := gomail.NewDialer(
+		mailConfigViper_.GetString("host"),
+		mailConfigViper_.GetInt("port"),
+		mailConfigViper_.GetString("user"),
+		mailConfigViper_.GetString("pwd"),
+	)
+
+	// Send the email to Bob, Cora and Dan.
+	if err := d.DialAndSend(m); err != nil {
+		// handle errr
+	}
 }
 ```
