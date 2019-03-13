@@ -88,3 +88,8 @@ mysqld_safe &
 ```sql
 show engines;
 ```
+
+# 设置默认字符集
+```bash
+mysql -u user -D db --default-character-set=utf8 -p
+```
