@@ -59,6 +59,9 @@ govendor add +e
 ## 号称最快的web框架
 [iris](https://github.com/kataras/iris)
 
+## golang实现lua虚拟机
+[gopher-lua](https://github.com/yuin/gopher-lua)
+
 ## 全自动apidoc生成
 [yaag](https://github.com/betacraft/yaag)
 
