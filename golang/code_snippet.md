@@ -96,17 +96,55 @@ func InitFatalLog(fileName string)  {
 			continue
 		}
 		ip := ipNet.IP
-		if ip.IsLoopback() || ip.IsMulticast() || ip.IsLinkLocalUnicast() || ip.IsLinkLocalMulticast() {
+		if ip.IsUnspecified() || ip.IsLoopback() || ip.IsMulticast() || ip.IsLinkLocalUnicast() || ip.IsLinkLocalMulticast() {
 			continue
 		}
 
 		selfIp = ip.String()
-		break
+		if IsPublicIP(ip) {
+			break
+		}
 	}
 
 	if selfIp == "" {
 		selfIp, _ = os.Hostname()
 	}
+
+	func IsPublicIP(IP net.IP) bool {
+    if ip4 := IP.To4(); ip4 != nil {
+        switch true {
+        case ip4[0] == 10:
+            return false
+        case ip4[0] == 172 && ip4[1] >= 16 && ip4[1] <= 31:
+            return false
+        case ip4[0] == 192 && ip4[1] == 168:
+            return false
+        }
+    }
+    return false
+}
+```
+
+## 优秀的配置库viper+监控文件fsnotify,动态修改参数
+```golang
+import(
+	"github.com/spf13/viper"
+	"github.com/fsnotify/fsnotify"
+)
+
+viper.SetConfigName("config") // name of config file (without extension)
+viper.AddConfigPath("/etc/appname/")   // path to look for the config file in
+viper.AddConfigPath("$HOME/.appname")  // call multiple times to add many search paths
+viper.AddConfigPath(".")               // optionally look for config in the working directory
+err := viper.ReadInConfig() // Find and read the config file
+if err != nil { // Handle errors reading the config file
+	panic(fmt.Errorf("Fatal error config file: %s \n", err))
+}
+
+viper.WatchConfig()
+viper.OnConfigChange(func(e fsnotify.Event) {
+	fmt.Println("Config file changed:", e.Name)
+})
 ```
 
 ##　map+mutex和sync.map比较
