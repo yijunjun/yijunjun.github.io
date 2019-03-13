@@ -49,6 +49,10 @@ govendor add +e
 ## 号称最快的json处理库
 [json-iterator](https://github.com/json-iterator/go)
 
+## 常用的日志库
+[zap](https://github.com/uber-go/zap)
+[zerolog](https://github.com/rs/zerolog)
+
 ## 死锁检测库
 [go-deadlock](github.com/sasha-s/go-deadlock)
 
