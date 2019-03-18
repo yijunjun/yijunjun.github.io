@@ -93,3 +93,11 @@ show engines;
 ```bash
 mysql -u user -D db --default-character-set=utf8 -p
 ```
+
+# 设置连接超时时间
+```sql
+show variables like '%timeout%';
+--604800=60*60*24
+set interactive_timeout=604800; 
+set wait_timeout=604800;
+```
