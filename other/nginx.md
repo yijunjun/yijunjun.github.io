@@ -18,3 +18,15 @@ rewrite ^(.*) https://$host$1 permanent;
 # fastcgi_param  SCRIPT_FILENAME  /scripts$fastcgi_script_name;
 fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
 ```
+
+## 查看当前nginx所用配置文件
+
+```bash
+# 获取nginx进程号
+ps -ef | grep nginx
+# 获取nginx路径
+cd /proc/pid
+ls -a
+# 执行相应路径的语法测试
+nginx -t
+```
