@@ -108,6 +108,7 @@ set @@GLOBAL.wait_timeout=604800;
 ```bash
 vi ~/.my.cnf
 [client]
+# 注意mysql的库中user表,localhost和127.0.0.1区别
 host = "localhost"
 user = "user"
 password = "pwd"

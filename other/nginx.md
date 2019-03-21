@@ -13,11 +13,30 @@ rewrite ^(.*) https://$host$1 permanent;
 
 ## php-fpm出现Primary script unknown问题
 
+1. 尝试修改nginx配置
+
 ```bash
 # FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream,
 # fastcgi_param  SCRIPT_FILENAME  /scripts$fastcgi_script_name;
 fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
 ```
+2. 如果仍然不行,则打开php-fpm.conf日志配置
+
+```bash
+access.log = /var/log/php-fpm.$pool.access.log
+```
+
+3. 再打开nginx日志配置
+
+```bash
+; http
+log_format scripts '$document_root$fastcgi_script_name > $request';
+; server
+access_log /usr/local/nginx/scripts.log scripts;
+```
+
+4. 重启nginx,和php-fpm 查看日志,一般是路径不对和权限不对
+
 
 ## 查看当前nginx所用配置文件
 
