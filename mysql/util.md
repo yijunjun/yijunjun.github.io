@@ -101,3 +101,13 @@ show variables like '%timeout%';
 set interactive_timeout=604800; 
 set wait_timeout=604800;
 ```
+
+# 免密码登陆
+
+```bash
+vi ~/.my.cnf
+[client]
+host = "localhost"
+user = "user"
+password = "pwd"
+```
