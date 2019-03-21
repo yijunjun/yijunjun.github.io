@@ -104,10 +104,17 @@ set wait_timeout=604800;
 
 # 免密码登陆
 
+1. 利用.my.cnf
 ```bash
 vi ~/.my.cnf
 [client]
 host = "localhost"
 user = "user"
 password = "pwd"
+```
+
+2. 利用命令行参数,或者别名
+
+```bash
+mysql -hlocalhost -uroot -pxxx
 ```
