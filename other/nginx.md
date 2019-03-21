@@ -38,6 +38,12 @@ access_log /usr/local/nginx/scripts.log scripts;
 4. 重启nginx,和php-fpm 查看日志,一般是路径不对和权限不对
 
 
+## php-fpm出现无法连接数库,可能是编译参数不对
+
+```bash
+./configure --enable-fpm --prefix=/usr/local/php --with-mysqli=mysqlnd --with-pdo-mysql=mysqlnd
+```
+
 ## 查看当前nginx所用配置文件
 
 ```bash
