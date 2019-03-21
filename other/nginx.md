@@ -27,6 +27,6 @@ ps -ef | grep nginx
 # 获取nginx路径
 cd /proc/pid
 ls -a
-# 执行相应路径的语法测试
+# 执行相应路径的语法测试,输出就能看到路径
 nginx -t
 ```
