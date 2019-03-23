@@ -55,3 +55,9 @@ ls -a
 # 执行相应路径的语法测试,输出就能看到路径
 nginx -t
 ```
+
+## php输出数组
+
+```php
+echo "<pre>";print_r($arr);echo "<pre>";
+```
