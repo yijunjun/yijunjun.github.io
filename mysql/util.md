@@ -1,3 +1,24 @@
+# 利用explain查看及优化sql
+
+```sql
+explain select col from table where con group by xx order by yy;  
+```
+
+输出说明:
+1. table 显示该语句涉及的表
+2. type 这列很重要，显示了连接使用了哪种类别,有无使用索引，反映语句的质量。
+3. possible_keys 列指出MySQL能使用哪个索引在该表中找到行
+4. key 显示MySQL实际使用的键（索引）。如果没有选择索引，键是NULL。
+5. key_len 显示MySQL决定使用的键长度。如果键是NULL，则长度为NULL。使用的索引的长度。在不损失精确性的情况下，长度越短越好
+6. ref 显示使用哪个列或常数与key一起从表中选择行。
+7. rows 显示MySQL认为它执行查询时必须检查的行数。
+8. extra 包含MySQL解决查询的详细信息。
+9. 其中：Explain的type显示的是访问类型，是较为重要的一个指标，结果值从好到坏依次是：
+    system > const > eq_ref > ref > fulltext > ref_or_null > index_merge > unique_subquery > index_subquery > range > index > ALL（优-->差）　一般来说，得保证查询至少达到range级别，最好能达到ref，否则就可能会出现性能问题
+
+小米出品[soar](https://github.com/XiaoMi/soar)工具,建议使用一下.本机安装在~/gopath/bin.
+
+
 # 碎片产生的原因
 
 1. 表的存储会出现碎片化，每当删除了一行内容，该段空间就会变为空白、被留空，而在一段时间内的大量删除操作，会使这种留空的空间变得比存储列表内容所使用的空间更大；
