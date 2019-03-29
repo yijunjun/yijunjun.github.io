@@ -53,6 +53,10 @@ govendor add +e
 [zap](https://github.com/uber-go/zap)
 [zerolog](https://github.com/rs/zerolog)
 
+## 操作excel/xlsx
+[360出品](https://github.com/360EntSecGroup-Skylar/excelize)
+[xlsx](https://github.com/tealeg/xlsx)
+
 ## 死锁检测库
 [go-deadlock](github.com/sasha-s/go-deadlock)
 
