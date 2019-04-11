@@ -172,6 +172,8 @@
 
 * [git积累](other/git.md)
 
+* [svn积累](other/svn.md)
+
 ----
 
 * [github-好库收集](https://www.gitlogs.com/)
