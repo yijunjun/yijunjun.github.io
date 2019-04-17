@@ -92,3 +92,9 @@ cp -r conf ${rundir}/
 nohup ./${target} >/dev/null 2>&1 &
 exit
 ```
+
+## 查看命令执行情况
+
+```bash
+set -V
+```
